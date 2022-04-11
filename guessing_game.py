@@ -28,6 +28,10 @@ def player(size):
           except ValueError:
                print("Please enter a number!")
                continue
+          if choice < 1:
+               print("Recedes bounds of the game!")
+          elif choice > size:
+               print("Exceeds the bounds of the game!")
           else:
                return choice
 
